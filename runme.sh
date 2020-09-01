@@ -1,11 +1,11 @@
 #!/bin/sh
 
-echo "logger test"
+echo "Starting log spew test"
+date
 
 while true
-  do date;
+  do  date;
   cat /app/payload;
   sleep 10;
   date;
 done
-  
