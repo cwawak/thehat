@@ -1,4 +1,4 @@
-FROM fedora:latest
+FROM ubi
 
 COPY . /app
 
