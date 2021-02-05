@@ -1,11 +1,12 @@
 #!/bin/sh
 
-echo "Starting log spew test"
+echo "Starting memory test"
 date
 
-while true
-  do  date;
-  cat /app/payload;
-  sleep 10;
+for i in {1..25}
+  do `date`;
+  echo "Memry used $i0 MB
+  /usr/bin/stress-ng --vm 1 --vm-bytes 10M --timeout 600s&
+  sleep 3;
   date;
 done
