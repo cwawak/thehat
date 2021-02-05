@@ -1,3 +1,2 @@
 FROM registry.fedoraproject.org/fedora
-CMD dnf -y install stress-ng
-USER nobody
+RUN dnf -y install stress-ng && dnf clean all
