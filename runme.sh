@@ -9,7 +9,7 @@ for i in {1..25}
   message="${message} ${i}"
   message="${message}0 MB"
   echo $message
-  /usr/bin/stress-ng --malloc 1 --malloc-bytes 10M --timeout 600s&
+  /usr/bin/stress-ng --malloc 1 --malloc-bytes 32k --malloc-max 32 --timeout 600s&
   sleep 3;
   date;
 done
