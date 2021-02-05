@@ -5,7 +5,10 @@ date
 
 for i in {1..25}
   do date;
-  echo "Memory used $i0 MB"
+  message="Memory used"
+  message="${message} ${i}"
+  message="${message} MB"
+  echo $message
   /usr/bin/stress-ng --vm 1 --vm-bytes 10M --timeout 600s&
   sleep 3;
   date;
