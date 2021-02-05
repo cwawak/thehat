@@ -1,4 +1,4 @@
 FROM registry.fedoraproject.org/fedora-minimal
 USER nobody
-COPY . /app
-CMD bash /app/runme.sh
+CMD dnf -y install stress-ng
+CMD bash
